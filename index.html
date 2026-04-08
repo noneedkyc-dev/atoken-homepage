@@ -3,45 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AToken — High Fidelity Landing Recreation</title>
-  <meta name="description" content="High-fidelity recreation of the AToken landing hero with live Binance market ticker." />
-  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <title>AToken — Agent-Driven Perp</title>
+  <meta name="description" content="AToken Agent-Driven Perp landing page package." />
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="preload" as="image" href="./assets/homepage-final.png">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <main class="hero-page">
-    <section class="hero" aria-label="AToken landing page hero">
-      <img class="hero-reference" src="./assets/hero-reference.png" alt="AToken reference hero artwork" />
+  <main class="page">
+    <section class="hero">
+      <div class="artboard">
+        <img src="./assets/homepage-final.png" alt="AToken homepage" class="hero-image" />
 
-      <a class="hotspot hotspot-logo" href="/" aria-label="AToken Home"></a>
-      <a class="hotspot hotspot-launch-top" href="https://dex.atoken.xyz" target="_blank" rel="noreferrer" aria-label="Launch APP"></a>
-      <a class="hotspot hotspot-launch-main" href="https://dex.atoken.xyz" target="_blank" rel="noreferrer" aria-label="Launch APP button"></a>
-      <a class="hotspot hotspot-explore-markets" href="https://dex.atoken.xyz/markets" target="_blank" rel="noreferrer" aria-label="Explore Markets button"></a>
-      <a class="hotspot hotspot-telegram" href="https://t.me/atokenxyz" target="_blank" rel="noreferrer" aria-label="Telegram"></a>
-      <a class="hotspot hotspot-x" href="https://x.com/ATokenxyz" target="_blank" rel="noreferrer" aria-label="X"></a>
-      <button class="hotspot hotspot-discord" type="button" aria-label="Discord"></button>
-      <button class="hotspot hotspot-wechat" type="button" aria-label="Wechat QR Code"></button>
+        <!-- top actions -->
+        <a class="hotspot launch-top" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Launch APP"></a>
 
-      <div class="live-ticker-shell" aria-label="Live Binance market ticker">
-        <div class="live-ticker-track" id="tickerTrack"></div>
+        <!-- main CTA -->
+        <a class="hotspot launch-main" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Launch APP"></a>
+        <a class="hotspot explore-markets" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Explore Markets"></a>
+
+        <!-- social buttons -->
+        <a class="hotspot telegram" href="https://t.me/atokenxyz" target="_blank" rel="noopener noreferrer" aria-label="Telegram"></a>
+        <a class="hotspot twitter" href="https://x.com/ATokenxyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"></a>
+        <a class="hotspot discord" href="javascript:void(0)" aria-label="Discord placeholder"></a>
+        <button class="hotspot wechat" type="button" aria-label="WeChat QR"></button>
       </div>
-
-      <div class="status-chip" id="wsStatus">Connecting live Binance market feed…</div>
     </section>
   </main>
 
-  <div class="wechat-modal" id="wechatModal" aria-hidden="true" role="dialog" aria-labelledby="wechatTitle">
-    <div class="wechat-card">
-      <button class="wechat-close" id="wechatClose" aria-label="Close WeChat QR">×</button>
-      <h2 id="wechatTitle">AToken WeChat</h2>
-      <p>Scan to connect on WeChat.</p>
-      <img src="./assets/wechatqr.png" alt="AToken WeChat QR code" />
-      <small>Replace <code>assets/wechatqr.png</code> with your official QR code when ready.</small>
+  <div class="qr-modal" id="qrModal" aria-hidden="true">
+    <div class="qr-backdrop" data-close></div>
+    <div class="qr-dialog" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+      <button class="qr-close" type="button" data-close aria-label="Close">×</button>
+      <h2 id="qrTitle">WeChat Assistant</h2>
+      <img src="./assets/wechatqr.png" alt="WeChat QR placeholder" class="qr-image" />
     </div>
   </div>
 
-  <div class="discord-toast" id="discordToast" aria-hidden="true">Discord link not provided yet. Update it in <code>index.html</code> when ready.</div>
-
-  <script src="./js/app.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
