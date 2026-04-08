@@ -270,3 +270,82 @@ body {
     max-width: calc(100vw - 24px);
   }
 }
+
+
+/* Latest update: responsive + latest-price ticker */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ticker-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-right: 14px;
+  border-radius: 999px;
+  background: rgba(8, 20, 40, 0.72);
+  border: 1px solid rgba(0, 119, 255, 0.24);
+  color: #eaf2ff;
+  white-space: nowrap;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.22);
+}
+.ticker-chip strong {
+  color: #7eb6ff;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .hero-wrap,
+  .hero-container,
+  .hero-inner,
+  .page-shell {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-reference,
+  .hero-bg,
+  .hero-image,
+  .hero-stage {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticker-track,
+  .ticker-marquee {
+    animation-duration: 30s !important;
+  }
+
+  .hotspot,
+  [class*="hotspot-"] {
+    min-height: 28px;
+  }
+
+  .wechat-modal-content,
+  .modal-content {
+    width: calc(100vw - 32px) !important;
+    max-width: 360px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .ticker-chip {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .wechat-modal-content,
+  .modal-content {
+    width: calc(100vw - 24px) !important;
+  }
+}
