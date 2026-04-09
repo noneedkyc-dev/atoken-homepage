@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs>
+<radialGradient id="bg" cx="50%" cy="60%" r="60%">
+<stop offset="0%" stop-color="#0b3a8f" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#020814" stop-opacity="0"/>
+</radialGradient>
+
+<radialGradient id="core" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="40%" stop-color="#7ec1ff"/>
+<stop offset="100%" stop-color="#0077ff" stop-opacity="0.1"/>
+</radialGradient>
+
+<linearGradient id="ring" x1="0" x2="1">
+<stop offset="0%" stop-color="#0077ff"/>
+<stop offset="100%" stop-color="#ffd777"/>
+</linearGradient>
+
+<linearGradient id="logo" x1="0" x2="1">
+<stop offset="0%" stop-color="#9fd7ff"/>
+<stop offset="100%" stop-color="#0077ff"/>
+</linearGradient>
+
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="8"/>
+</filter>
+</defs>
+
+<!-- ambient -->
+<ellipse cx="650" cy="520" rx="420" ry="160" fill="url(#bg)"/>
+
+<!-- orbit lines -->
+<ellipse cx="650" cy="500" rx="300" ry="100" fill="none" stroke="url(#ring)" stroke-opacity="0.4" stroke-width="2"/>
+<ellipse cx="650" cy="500" rx="260" ry="80" fill="none" stroke="#4ea2ff" stroke-opacity="0.25" stroke-width="2" transform="rotate(12 650 500)"/>
+<ellipse cx="650" cy="500" rx="340" ry="120" fill="none" stroke="#4ea2ff" stroke-opacity="0.2" stroke-width="2" transform="rotate(-15 650 500)"/>
+
+<!-- central premium logo core -->
+<g transform="translate(650 480)" filter="url(#glow)">
+  <circle r="70" fill="url(#core)"/>
+
+  <!-- refined AToken mark -->
+  <circle cx="-20" cy="10" r="10" fill="#ffd777"/>
+  <path d="M10 -30 L55 60 L25 60 L-20 -5 Z" fill="url(#logo)"/>
+</g>
+
+<!-- network nodes -->
+<g fill="#7ec1ff">
+  <circle cx="450" cy="430" r="6"/>
+  <circle cx="520" cy="360" r="5"/>
+  <circle cx="820" cy="380" r="6"/>
+  <circle cx="900" cy="470" r="5"/>
+  <circle cx="780" cy="600" r="5"/>
+  <circle cx="560" cy="600" r="5"/>
+</g>
+
+<!-- connections -->
+<g stroke="#4ea2ff" stroke-opacity="0.3">
+  <path d="M450 430 L520 360 L650 480"/>
+  <path d="M820 380 L650 480"/>
+  <path d="M900 470 L650 480"/>
+  <path d="M780 600 L650 480"/>
+  <path d="M560 600 L650 480"/>
+</g>
+
+<!-- particles -->
+<g fill="#ffd777">
+  <circle cx="500" cy="300" r="2"/>
+  <circle cx="900" cy="320" r="2"/>
+  <circle cx="750" cy="650" r="2"/>
+</g>
+
+</svg>

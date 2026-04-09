@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Update this when your production domain and sitemap are ready
-# Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://dex.atoken.xyz/sitemap.xml

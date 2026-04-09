@@ -4,42 +4,212 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AToken — Agent-Driven Perp</title>
-  <meta name="description" content="AToken Agent-Driven Perp landing page package." />
-  <link rel="icon" href="./favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="./assets/favicon.png">
-  <link rel="preload" as="image" href="./assets/homepage-final.png">
-  <link rel="stylesheet" href="./css/styles.css">
+  <meta name="description" content="AToken is an Agent-Driven Perp platform. Amplify Any Token, Powered by AI." />
+  <link rel="icon" href="./assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="artboard">
-        <img src="./assets/homepage-final.png" alt="AToken homepage" class="hero-image" />
+  <div class="page-bg"></div>
 
-        <!-- top actions -->
-        <a class="hotspot launch-top" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Launch APP"></a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="AToken homepage">
+        <img src="./assets/atoken-mark.png" alt="AToken logo" />
+      </a>
+      <a class="btn primary" href="https://dex.atoken.xyz" target="_blank" rel="noopener">Launch APP</a>
+    </div>
+  </header>
 
-        <!-- main CTA -->
-        <a class="hotspot launch-main" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Launch APP"></a>
-        <a class="hotspot explore-markets" href="https://dex.atoken.xyz" target="_blank" rel="noopener noreferrer" aria-label="Explore Markets"></a>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow">Agent-Driven Perp</div>
+        <h1>
+          The Future of<br />
+          Perp Trading<br />
+          <span class="gradient">Runs on Agents</span>
+        </h1>
+        <p class="slogan gradient-small">Amplify Any Token, Powered by AI</p>
+        <p class="hero-text">
+          AToken brings together AI-native execution, a collaborative agent network,
+          and the long-term path toward an open agentic protocol.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://dex.atoken.xyz" target="_blank" rel="noopener">Launch APP</a>
+          <a class="btn secondary" href="https://dex.atoken.xyz/markets" target="_blank" rel="noopener">Explore Markets</a>
+        </div>
+      </div>
 
-        <!-- social buttons -->
-        <a class="hotspot telegram" href="https://t.me/atokenxyz" target="_blank" rel="noopener noreferrer" aria-label="Telegram"></a>
-        <a class="hotspot twitter" href="https://x.com/ATokenxyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"></a>
-        <a class="hotspot discord" href="javascript:void(0)" aria-label="Discord placeholder"></a>
-        <button class="hotspot wechat" type="button" aria-label="WeChat QR"></button>
+      <div class="hero-art panel">
+        <img class="hero-graphic" src="./assets/illustrations/hero-orb.svg" alt="AToken agent network hero graphic" />
+        <div class="signal signal-top">Signal Agent</div>
+        <div class="signal signal-left">Execution Agent</div>
+        <div class="signal signal-right">Risk Agent</div>
+      </div>
+    </section>
+
+    <section class="stats-wrap container">
+      <div class="stats panel">
+        <div class="stat"><strong>$25.7B+</strong><span>24H Volume</span></div>
+        <div class="stat"><strong>&lt;30ms</strong><span>Latency</span></div>
+        <div class="stat"><strong>200+</strong><span>Markets</span></div>
+        <div class="stat"><strong>Low</strong><span>Gas Fees</span></div>
+        <div class="community-pill">
+          <div class="avatars"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="community-copy">Traders & AI Agents<br/>Winning Together</div>
+          <div class="mini-badge">200K+</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="path-section container">
+      <div class="section-label">Our Path to Transform Trading</div>
+      <div class="path-grid">
+        <article class="path-card panel">
+          <img src="./assets/illustrations/path-trading.svg" alt="Trading platform illustration" />
+          <div class="num">01</div>
+          <h3>Trading Platform</h3>
+          <p>AI-powered perpetual trading with deep liquidity.</p>
+        </article>
+        <div class="arrow">→</div>
+        <article class="path-card panel">
+          <img src="./assets/illustrations/path-network.svg" alt="Agent trading network illustration" />
+          <div class="num">02</div>
+          <h3>Agent Trading Network</h3>
+          <p>A collaborative layer where agents compete, share signals, and grow.</p>
+        </article>
+        <div class="arrow">→</div>
+        <article class="path-card panel">
+          <img src="./assets/illustrations/path-protocol.svg" alt="Agentic protocol illustration" />
+          <div class="num">03</div>
+          <h3>Agentic Protocol</h3>
+          <p>The foundational layer for open, composable agent-driven finance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="capabilities container">
+      <div class="section-label">Built for the Next Era of Trading</div>
+      <div class="caps-grid">
+        <article class="cap panel">
+          <img src="./assets/illustrations/cap-markets.svg" alt="Agent-powered markets illustration" />
+          <h3>Agent-Powered Markets</h3>
+          <p>Discover and trade high-potential opportunities.</p>
+        </article>
+        <article class="cap panel">
+          <img src="./assets/illustrations/cap-exec.svg" alt="Autonomous execution illustration" />
+          <h3>Autonomous Execution</h3>
+          <p>Precision execution that adapts in real time.</p>
+        </article>
+        <article class="cap panel">
+          <img src="./assets/illustrations/cap-risk.svg" alt="Intelligent risk control illustration" />
+          <h3>Intelligent Risk Control</h3>
+          <p>Adaptive protection designed for every trade.</p>
+        </article>
+        <article class="cap panel">
+          <img src="./assets/illustrations/cap-governance.svg" alt="Aligned governance illustration" />
+          <h3>Aligned Governance</h3>
+          <p>Community and agents evolve the network together.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="network container panel">
+      <div class="network-copy">
+        <div class="section-label left">A Network of Agents</div>
+        <h2>Smarter Together,<br/>Stronger Than Ever</h2>
+        <p>
+          A decentralized network where AI agents collaborate, compete, and improve.
+          Every interaction makes the system smarter.
+        </p>
+        <div class="network-stats">
+          <div><strong>50+</strong><span>AI Agents</span></div>
+          <div><strong>1M+</strong><span>Signals / Day</span></div>
+          <div><strong>99.99%</strong><span>Uptime</span></div>
+        </div>
+      </div>
+
+      <div class="network-art">
+        <img src="./assets/illustrations/network-globe.svg" alt="AToken network globe illustration" />
+        <div class="core-mark"><img src="./assets/atoken-mark.png" alt="AToken mark" /></div>
+      </div>
+    </section>
+
+    <section class="partners container">
+      <div class="section-label">Built on Trusted Infrastructure</div>
+      <div class="partner-row panel">
+        <img src="./assets/partners/ethereum.svg" alt="Ethereum logo" />
+        <img src="./assets/partners/arbitrum.svg" alt="Arbitrum logo" />
+        <img src="./assets/partners/bnbchain.svg" alt="BNB Chain logo" />
+        <img src="./assets/partners/orderly.svg" alt="Orderly logo" />
+        <img src="./assets/partners/circle.svg" alt="Circle logo" />
+      </div>
+    </section>
+
+    <section class="cta-section container panel">
+      <div class="cta-figure"><img src="./assets/illustrations/robot-left.svg" alt="AToken agent illustration left" /></div>
+      <div class="cta-copy">
+        <h2>The Agent-Driven Perp DEX<br/><span class="gradient">of the Future</span></h2>
+        <p>Be early. Trade with AI agents. Shape the future together.</p>
+        <div class="cta-row center">
+          <a class="btn primary" href="https://dex.atoken.xyz" target="_blank" rel="noopener">Launch APP</a>
+          <a class="btn secondary" href="https://dex.atoken.xyz/markets" target="_blank" rel="noopener">Explore Markets</a>
+        </div>
+      </div>
+      <div class="cta-figure"><img src="./assets/illustrations/robot-right.svg" alt="AToken agent illustration right" /></div>
+    </section>
+
+    <section class="social-section container panel">
+      <div class="social-intro">
+        <div class="section-label left">Join the Movement</div>
+        <h3>The First Agent-Driven Perp DEX</h3>
+        <p>Connect with the AToken community.</p>
+      </div>
+      <div class="social-cards">
+        <a class="social-card" href="https://t.me/atokenxyz" target="_blank" rel="noopener">
+          <span class="sicon">✈</span>
+          <div><strong>Telegram</strong><small>@atokenxyz</small></div>
+        </a>
+        <a class="social-card" href="https://x.com/ATokenxyz" target="_blank" rel="noopener">
+          <span class="sicon">𝕏</span>
+          <div><strong>X / Twitter</strong><small>@ATokenxyz</small></div>
+        </a>
+        <a class="social-card" href="#" target="_blank" rel="noopener">
+          <span class="sicon">◎</span>
+          <div><strong>Discord</strong><small>Link placeholder</small></div>
+        </a>
+        <div class="social-card wechat-card">
+          <span class="sicon">微信</span>
+          <div><strong>WeChat</strong><small>Scan to connect</small></div>
+          <img src="./assets/wechatqr.png" alt="WeChat QR code placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-meta container panel">
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="https://dex.atoken.xyz/markets" target="_blank" rel="noopener">Markets</a>
+          <a href="https://dex.atoken.xyz/rewards/affiliate" target="_blank" rel="noopener">Rewards</a>
+          <a href="https://dex.atoken.xyz/points" target="_blank" rel="noopener">Points</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="https://t.me/atokenxyz" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://x.com/ATokenxyz" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="#" target="_blank" rel="noopener">Discord</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <div class="qr-modal" id="qrModal" aria-hidden="true">
-    <div class="qr-backdrop" data-close></div>
-    <div class="qr-dialog" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
-      <button class="qr-close" type="button" data-close aria-label="Close">×</button>
-      <h2 id="qrTitle">WeChat Assistant</h2>
-      <img src="./assets/wechatqr.png" alt="WeChat QR placeholder" class="qr-image" />
-    </div>
-  </div>
+  <footer class="footer container">
+    <a class="brand" href="#top"><img src="./assets/atoken-mark.png" alt="AToken logo" /></a>
+  </footer>
 
   <script src="./js/main.js"></script>
 </body>

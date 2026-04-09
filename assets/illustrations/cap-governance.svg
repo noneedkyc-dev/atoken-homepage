@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+<defs>
+<linearGradient id="g" x1="0" x2="1">
+<stop offset="0%" stop-color="#0077ff"/>
+<stop offset="100%" stop-color="#7ec1ff"/>
+</linearGradient>
+
+<radialGradient id="glow" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#7ec1ff" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#0077ff" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<!-- background glow -->
+<circle cx="110" cy="110" r="90" fill="url(#glow)"/>
+
+<!-- central governance core -->
+<circle cx="110" cy="80" r="20" fill="none" stroke="url(#g)" stroke-width="2.5"/>
+<circle cx="110" cy="80" r="6" fill="#7ec1ff"/>
+
+<!-- surrounding agents -->
+<circle cx="60" cy="110" r="14" fill="none" stroke="#4ea2ff" stroke-width="2"/>
+<circle cx="160" cy="110" r="14" fill="none" stroke="#4ea2ff" stroke-width="2"/>
+<circle cx="110" cy="150" r="14" fill="none" stroke="#4ea2ff" stroke-width="2"/>
+
+<!-- connections -->
+<path d="M110 100 L60 110" stroke="url(#g)" stroke-width="2"/>
+<path d="M110 100 L160 110" stroke="url(#g)" stroke-width="2"/>
+<path d="M110 100 L110 150" stroke="url(#g)" stroke-width="2"/>
+
+<!-- network ring -->
+<ellipse cx="110" cy="110" rx="70" ry="24" fill="none" stroke="#0077ff" stroke-opacity="0.3"/>
+
+<!-- particles -->
+<circle cx="40" cy="90" r="2" fill="#7ec1ff"/>
+<circle cx="180" cy="85" r="2" fill="#ffd777"/>
+<circle cx="140" cy="180" r="2" fill="#7ec1ff"/>
+
+</svg>
