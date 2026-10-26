@@ -57,7 +57,7 @@ export const AT_TOKEN_ADDRESS = "";
 
 `api/market.js` 为 Vercel Function。不要只上传 dist 而遗漏 API 源码。未来推送该分支后由 Vercel Git 集成部署。不要向 main 合并本独立项目，除非计划整合主站。
 
-当前项目创建被 Vercel 403 权限阻止；CLI 也没有登录凭据。必须取得项目创建权限，或由账号所有者按上述配置导入。没有声称已经部署成功。
+Vercel 项目 `atoken-spot` 已创建并完成生产部署：https://atoken-spot.vercel.app/ 。项目 ID：`prj_ndlxDerqRYriOTSK55io7u6ohaiq`。此前带团队选择参数的 API 调用误报权限或项目不存在；使用连接默认团队后创建成功，返回的 accountId 与预期团队一致。后续操作优先使用项目 ID，并核对返回的团队身份。
 
 ## 验证与后续
 
