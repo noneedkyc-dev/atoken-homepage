@@ -1,0 +1,7 @@
+{
+  "name": "atoken-spot", "version": "0.1.0", "private": true, "type": "module",
+  "description": "AToken BSC AT/USDT trading terminal",
+  "scripts": {"dev":"node scripts/dev.mjs", "build":"node scripts/build.mjs", "test":"node --test tests/*.test.mjs"},
+  "dependencies": {"ethers":"6.16.0", "lightweight-charts":"5.2.1"},
+  "devDependencies":{"esbuild":"0.28.0"}, "engines":{"node":">=22"}
+}
